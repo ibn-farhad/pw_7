@@ -13,13 +13,6 @@
   - `CMakeLists.txt` imports `matrixlib` from `libs/matrixlib/shared-matrixlib.so` and links it to the executable.
   - `MATH_USE_DOUBLE_PRECISION` is set (using `double` as `real`).
 
-- **How to build & run:**
-
-```bash
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
-cmake --build build
-./build/pw_7
-```
 - **Notes:**
   - Ensure `libs/matrixlib/shared-matrixlib.so` exists and is readable at build/run time.
   - The program prints a 3x3 matrix with a few set values (example usage in `main.cpp`).
